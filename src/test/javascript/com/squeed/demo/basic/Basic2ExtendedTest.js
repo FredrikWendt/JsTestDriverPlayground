@@ -5,6 +5,10 @@ BasicExtendedTest.prototype = {
 	testNothingAgain: function() {
 	},
 	
+	_testIgnored: function() {
+		fail("I won't fail since I don't follow the naming pattern");
+	},
+	
 	testSomeAssertions: function() {
 		assert(true);
 		assertTrue(true);
@@ -30,6 +34,10 @@ BasicExtendedTest.prototype = {
 	
 	testWhichFailsToo: function() {
 		assertFalse(true);
+	},
+	
+	testThatThrowsAnException: function() {
+		throw "Whops";
 	}
 };
 
