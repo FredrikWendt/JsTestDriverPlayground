@@ -10,6 +10,8 @@ BasicBrokenTest = TestCase('BasicBrokenTest');
 BasicBrokenTest.prototype.testNothing = function() {
 };
 
-// there's uncompleted work here - "severe" syntax errors
+// there's uncompleted work here - "severe" syntax errors on next line
 BasicBrokenTest.prototype
+// I've found it helpful to use the Error console in Firefox to "discover" this
+// JsLint of course would help as well!
 */
